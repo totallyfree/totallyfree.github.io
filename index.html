@@ -1,0 +1,134 @@
+<!doctype html>
+<!--
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<html>
+  <head lang="en">
+    <title>Totally Free Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+  </head>
+  <body data-spy="scroll" data-target="#toc" data-offset="100">
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1 class="display-3">Totally Free Website</h1>
+        <p class="lead">With EU.org, Cloudflare and GitHub</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="list-group sticky-top" id="toc">
+            <a class="list-group-item list-group-item-action" href="#intro">Quick Intro</a>
+            <a class="list-group-item list-group-item-action" href="#needed">Things Needed</a>
+            <a class="list-group-item list-group-item-action" href="#avoid">To Avoid</a>
+            <a class="list-group-item list-group-item-action" href="#services">Services Used</a>
+            <div class="list-group ml-4">
+              <a class="list-group-item list-group-item-action" href="#eu">EU.org</a>
+              <a class="list-group-item list-group-item-action" href="#cloudflare">Cloudflare</a>
+              <a class="list-group-item list-group-item-action" href="#github">GitHub</a>
+            </div>
+            <a class="list-group-item list-group-item-action" href="#steps">Steps</a>
+            <div class="list-group ml-4">
+              <a class="list-group-item list-group-item-action" href="#domain">Domain</a>
+              <a class="list-group-item list-group-item-action" href="#dns">DNS</a>
+              <a class="list-group-item list-group-item-action" href="#host">Host</a>
+              <a class="list-group-item list-group-item-action" href="#tls">TLS</a>
+              <a class="list-group-item list-group-item-action" href="#email">Email</a>
+            </div>
+            <a class="list-group-item list-group-item-action" href="#this">This Site</a>
+            <a class="list-group-item list-group-item-action" href="#end">Conclusion</a>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div>
+            <h1 id="intro">A Quick Introduction</h1>
+            <p class="lead">If you want to make a website and don't want to pay a single coin, well, you <em>can</em> do that. And it's not some shady so-called "free hosting service" that abuses your data. Nope, there are totally <em>legit</em> ways to get a free website up and running. And guess what, all the services we are going to use for this purpose are from reputable companies. So, that's one less thing to worry about.</p>
+            <p class="lead">Now then, let's get down to business.</p>
+            <h1 id="needed">Things you need</h1>
+            <p class="lead">In order to create a website you need five things &mdash;</p>
+            <ol class="lead">
+              <li><strong>Domain name</strong> : This will be your website address.</li>
+              <li><strong>DNS service</strong> : This will point your visitors in the right direction.</li>
+              <li><strong>TLS certificate</strong> : To protect the data exchange between you and your visitors. Also makes you look legit with the http<u>s</u> address.</li>
+              <li><strong>The code</strong> : We'll assume you can write the code for your website or have someone to do that for you. But you can just use any website creator app that exports the final content in plain HTML/CSS/JS.</li>
+              <li><strong>Hosting service</strong> : We need to host the website somewhere, so that your visitors can reach it.</li>
+            </ol>
+            <h1 id="avoid">What to Avoid</h1>
+            <p class="lead">Please avoid the so called "free" hosting providers who give you everything in a single click or something like that. Most of them are scams. They will seize your domain name the moment it gets popular and hold it hostage. They will also inject advertisements to your website whenever they see fit.</p>
+            <p class="lead">You should also avoid cheap hosting providers who promise you "unlimited" everything. There is no such thing as unlimited, they will throttle your site as they please or claim unfair usage on your part if your website starts consuming more resources than they intend to allow.</p>
+            <p class="lead">Also should you plan to buy the premium services, don't buy the domain from your hosting company, it'll be a major pain if you ever need to switch hosts. And never buy a very long term package from your hosting provider, you'd lose a lot of money if their service quality drops later.</p>
+            <h1 id="services">Services We Can Use</h1>
+            <p class="lead">Here is a list of reputable service providers that we can use for each of our requirements.</p>
+            <h2 id="eu">EU.org</h2>
+            <p class="lead">EU.org is a European organization dedicated to provide free domain names to anyone who wishes to use them. They are a non-profit organization and depends on volunteers across the world. They are not very shiny, but they get the job done quite good. Their domain names don't have any strings attached and you can use them as long as you want provided you don't host any illegal stuff in your website.</p>
+            <p class="lead">There domain names are a bit longer though, as you can see from the address of this website itself. But that's only a minor inconvenience in my opinion.</p>
+            <p class="lead">Link: <a href="https://nic.eu.org/" target="_blank">https://nic.eu.org/</a></p>
+            <h2 id="cloudflare">Cloudflare</h2>
+            <p class="lead">Cloudflare is a giant DNS provider that provides both free and premium DNS services. Their free service will be quite enough for our purposes. Their service also includes DNSSEC and free TLS, which is awesome.</p>
+            <p class="lead">Link: <a href="https://www.cloudflare.com/" target="_blank">https://www.cloudflare.com/</a></p>
+            <h2 id="github">GitHub</h2>
+            <p class="lead">GitHub is primarily a code hosting service, but they also allow you to host a static website. The website has to be static though, that means no server side scripting and the site can only be made with HTML/CSS and client side JS. But not to worry, it's quite enough for our purposes.</p>
+            <p class="lead">Link: <a href="https://github.com/" target="_blank">https://github.com/</a></p>
+            <h1 id="steps">The Step by Step Approach</h1>
+            <p class="lead">Now we'll see how each of the required steps can be performed.</p>
+            <h2 id="domain">Register the Domain</h2>
+            <p class="lead">Visit the EU.org site and create an account. There website can be a bit difficult to navigate so here's the sign up link, <a href="https://nic.eu.org/arf/en/login/" target="_blank">click here</a> to visit the login page and click on the <code>Register</code> button to create an account. You'll need to confirm your e-mail address before you can register a domain. <a href="https://nic.eu.org/opendomains.html" target="_blank">Here's</a> their domain policy guidelines. It takes them about a day or two to approve any domain name request, so be patient and check back after a day or two.</p>
+            <h2 id="dns">Setup the DNS Records</h2>
+            <p class="lead">You need to create an account with <a href="https://www.cloudflare.com/a/sign-up" target="_blank">Cloudflare</a> first. Now you need to perform the following steps &mdash;</p>
+            <ol class="lead">
+              <li>Login to your Cloudflare account and look for the <em>nameserver</em> names. There will be two.</li>
+              <li>Add the domain name to your account. Don't panic if it complains about not finding any records, because we haven't created any yet.</li>
+              <li>On the DNS page create two <code>A</code> records with the GitHub's IP addresses, which are currently <code>192.30.252.153</code> and <code>192.30.252.154</code>. <a href="https://help.github.com/articles/setting-up-an-apex-domain/" target="_blank">This page</a> should contain the latest records.</li>
+              <li>Login to to your EU.org account and edit the DNS record of your registered domain. When prompted for the nameservers, add your Cloudflare nameservers to your domain record.</li>
+              <li>It takes about a day to propagate the DNS records across the world, so you might want to continue the next steps the following day.</li>
+            </ol>
+            <h2 id="host">Upload Files to the Host</h2>
+            <p class="lead">For this you need to register an account with <a href="https://github.com/join" target="_blank">GitHub</a>. You may need to confirm your e-mail address. You also need to have your code ready at this point, just a simple <code>index.html</code> will do. After all this is done, perform the following steps &mdash;</p>
+            <ol class="lead">
+              <li>Create a repository called <code>&lt;username&gt;.github.io</code>. So if your username is <code>totallyfree</code>, your repository name should be <code>totallyfree.github.io</code>.</li>
+              <li>Upload your files to the repository.</li>
+              <li>Go to the settings page of this repository, scroll down to the GitHub pages section and add the domain name you registered at EU.org.</li>
+            </ol>
+            <p class="lead">If everything went okay until now, you should have your website up by now. In case something is wrong, retrace your steps and read the respective manuals of these services.</p>
+            <h2 id="tls">Enable HTTPS with Cloudflare</h2>
+            <p class="lead">Login to your Cloudflare account and visit the <code>crypto</code> tab. Enable SSL from here, you should choose either flexible or full in the SSL options.</p>
+            <p class="lead">So, your website is online now and it can be accessed securely over https by your visitors. Congratulations!</p>
+            <h2 id="email">Bonus Item: Setup Free Email</h2>
+            <p class="lead">So we have successfully set up our websites, why not have our very own email addresses as well? And the good news is you can do that for free too!</p>
+            <p class="lead">Zoho is an Indian company that provides free email addresses with your own domain name. You need to register an account with them and they also require your mobile phone number.</p>
+            <p class="lead">Link: <a href="https://www.zoho.com" target="_blank">https://www.zoho.com/</a></p>
+            <h1 id="this">About This Site</h1>
+            <p class="lead">This site was created as a proof of concept for the method described here. It is totally free and it uses EU.org, Cloudflare and GitHub. The site was written by hand using the Bootstrap 4 library.</p>
+            <h1 id="end">The Final Conclusion</h1>
+            <p class="lead">So if you want a totally free website, you can not only get one but you can get it in hight quality too. All you need to know is where to look.</p>
+            <p class="lead">However you should really consider buying your own personal domain name. They are an asset and good domain names are running out fast. Besides they are fairly cheap. But always buy them from a reputable domain registrar.</p>
+            <p class="lead">I personally use and recommend <a href="https://www.bigrock.com/?coupon=agnibho.com" target="_blank">BigRock</a>. If you decide to buy from them use the coupon code <code>agnibho.com</code> to get up to 25% discount on your purchase.</p>
+            <p class="lead">Now that you have a website, post some quality content in it and share the link with others. Hopefully your new website will start having visitors in no time.</p>
+            <p class="text-muted text-right">Author: Agnibho Mondal<br>Last Edited: March 03, 2018</p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <p class="lead text-center"><a href="https://www.agnibho.com">Copyright &copy; 2018 Agnibho Mondal</a></p>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
